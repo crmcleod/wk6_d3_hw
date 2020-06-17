@@ -42,8 +42,8 @@ Traveller.prototype.allTransports = function(){
 Traveller.prototype.getUniqueModesOfTransport = function () {
   transports = this.allTransports()
   const array = 
-  transports.filter(function(item, pos){
-    return transports.indexOf(item) == pos;
+  transports.filter(function(transport, i){
+    return transports.indexOf(transport) == i;
   })
 return array
 }
